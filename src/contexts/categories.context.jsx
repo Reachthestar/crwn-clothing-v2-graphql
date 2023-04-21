@@ -38,7 +38,7 @@ export const CategoriesProvider = ({ children }) => {
     }
   }, [data])
 
-  const value = { categoriesMap, loading };
+  const value = { categoriesMap, loading, error };
   return (
     <CategoriesContext.Provider value={value}>
       {children}
